@@ -42,14 +42,18 @@ class MyBottomBar extends StatelessWidget {
             ),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/like');
+            },
             icon: const FaIcon(
               FontAwesomeIcons.heart,
               size: 35.0,
             ),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/like');
+            },
             icon: const FaIcon(
               FontAwesomeIcons.user,
               size: 35.0,
