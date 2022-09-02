@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:instagram_ui/utils/storyBubble.dart';
 
 class MyBottomBar extends StatelessWidget {
   const MyBottomBar({Key? key}) : super(key: key);
@@ -9,8 +8,8 @@ class MyBottomBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 50.0,
-      padding: EdgeInsets.all(8.0),
-      decoration: BoxDecoration(
+      padding: const EdgeInsets.all(8.0),
+      decoration: const BoxDecoration(
         color: Colors.black,
       ),
       child: Row(
@@ -21,7 +20,7 @@ class MyBottomBar extends StatelessWidget {
             onPressed: () {
               Navigator.pushNamed(context, "/");
             },
-            icon: FaIcon(
+            icon: const FaIcon(
               FontAwesomeIcons.home,
               size: 35.0,
             ),
@@ -30,28 +29,28 @@ class MyBottomBar extends StatelessWidget {
             onPressed: () {
               Navigator.pushNamed(context, "/search");
             },
-            icon: FaIcon(
+            icon: const FaIcon(
               FontAwesomeIcons.search,
               size: 35.0,
             ),
           ),
           IconButton(
             onPressed: () {},
-            icon: FaIcon(
+            icon: const FaIcon(
               FontAwesomeIcons.instagram,
               size: 35.0,
             ),
           ),
           IconButton(
             onPressed: () {},
-            icon: FaIcon(
+            icon: const FaIcon(
               FontAwesomeIcons.heart,
               size: 35.0,
             ),
           ),
           IconButton(
             onPressed: () {},
-            icon: FaIcon(
+            icon: const FaIcon(
               FontAwesomeIcons.user,
               size: 35.0,
             ),

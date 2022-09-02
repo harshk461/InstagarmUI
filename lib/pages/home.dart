@@ -27,6 +27,7 @@ class HomePage extends StatelessWidget {
     ];
     return SafeArea(
       child: Scaffold(
+        resizeToAvoidBottomInset: false,
         backgroundColor: Colors.black,
         appBar: PreferredSize(
           preferredSize: Size.fromHeight(60),
