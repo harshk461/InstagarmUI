@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:instagram_ui/utils/BottomBarUI.dart';
 import 'package:instagram_ui/utils/FollowCard.dart';
@@ -10,6 +9,7 @@ class LikedPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Colors.black,
         resizeToAvoidBottomInset: false,
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

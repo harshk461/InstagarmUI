@@ -11,14 +11,11 @@ class _FollowCardState extends State<FollowCard> {
   @override
   Widget build(BuildContext context) {
     String btntext = 'Following';
-    String colorwhite = '#efefe';
-    String colorblue = '#277BC0';
-    String finalColor = colorwhite;
     return Expanded(
       child: Container(
-        padding: EdgeInsets.fromLTRB(15.0, 10.0, 15.0, 0.0),
-        margin: EdgeInsets.only(bottom: 10.0),
-        decoration: BoxDecoration(),
+        padding: const EdgeInsets.fromLTRB(15.0, 10.0, 15.0, 0.0),
+        margin: const EdgeInsets.only(bottom: 10.0),
+        decoration: const BoxDecoration(),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -32,10 +29,10 @@ class _FollowCardState extends State<FollowCard> {
                     height: 60.0,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10.0,
                 ),
-                Align(
+                const Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
                     "XYZ ABCC Started\n Following you",
@@ -57,7 +54,7 @@ class _FollowCardState extends State<FollowCard> {
               },
               child: Text(
                 btntext,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 20.0,
                 ),
               ),
