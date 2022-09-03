@@ -35,7 +35,9 @@ class MyBottomBar extends StatelessWidget {
             ),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/instagram');
+            },
             icon: const FaIcon(
               FontAwesomeIcons.instagram,
               size: 35.0,
@@ -52,7 +54,7 @@ class MyBottomBar extends StatelessWidget {
           ),
           IconButton(
             onPressed: () {
-              Navigator.pushNamed(context, '/like');
+              Navigator.pushNamed(context, '/profile');
             },
             icon: const FaIcon(
               FontAwesomeIcons.user,

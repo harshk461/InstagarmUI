@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:instagram_ui/utils/BottomBarUI.dart';
 import 'package:instagram_ui/utils/navbar.dart';
 import 'package:instagram_ui/utils/post.dart';
-import 'package:instagram_ui/utils/storyBar.dart';
 import 'package:instagram_ui/utils/storyBubble.dart';
 
 class HomePage extends StatelessWidget {
-  HomePage({Key? key}) : super(key: key);
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +27,7 @@ class HomePage extends StatelessWidget {
       child: Scaffold(
         resizeToAvoidBottomInset: false,
         backgroundColor: Colors.black,
-        appBar: PreferredSize(
+        appBar: const PreferredSize(
           preferredSize: Size.fromHeight(60),
           child: NavbarUI(),
         ),
@@ -37,18 +35,16 @@ class HomePage extends StatelessWidget {
           children: [
             SizedBox(
               height: 100.0,
-              child: Container(
-                child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: StoryUser.length,
-                  itemBuilder: ((context, index) => StoryBubble(
-                        ImageUrl: StoryUser[index][1],
-                        text: StoryUser[index][2],
-                      )),
-                ),
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: StoryUser.length,
+                itemBuilder: ((context, index) => StoryBubble(
+                      ImageUrl: StoryUser[index][1],
+                      text: StoryUser[index][2],
+                    )),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
             Expanded(
@@ -63,7 +59,7 @@ class HomePage extends StatelessWidget {
             ),
           ],
         ),
-        bottomSheet: MyBottomBar(),
+        bottomSheet: const MyBottomBar(),
       ),
     );
   }

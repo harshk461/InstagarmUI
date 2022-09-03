@@ -1,7 +1,5 @@
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:instagram_ui/utils/BottomBarUI.dart';
 import 'package:instagram_ui/utils/FollowCard.dart';
 
@@ -17,9 +15,9 @@ class LikedPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              padding: EdgeInsets.fromLTRB(15.0, 20.0, 0.0, 10.0),
+              padding: const EdgeInsets.fromLTRB(15.0, 20.0, 0.0, 10.0),
               alignment: Alignment.centerLeft,
-              child: Text(
+              child: const Text(
                 "Activity",
                 style: TextStyle(
                   fontSize: 35.0,
@@ -36,25 +34,25 @@ class LikedPage extends StatelessWidget {
                 children: [
                   ClipRRect(
                     borderRadius: BorderRadius.circular(100),
-                    child: Icon(
+                    child: const Icon(
                       Icons.supervised_user_circle,
                       size: 60,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10.0,
                   ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         "Follow Request",
                         style: TextStyle(
                           fontSize: 25.0,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 5.0,
                       ),
                       Text(
@@ -66,13 +64,13 @@ class LikedPage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15.0,
                   ),
                 ],
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(15.0, 10.0, 0.0, 15.0),
               child: Text(
                 "Today",
@@ -85,13 +83,13 @@ class LikedPage extends StatelessWidget {
               child: ListView.builder(
                 scrollDirection: Axis.vertical,
                 shrinkWrap: true,
-                itemBuilder: (context, index) => FollowCard(),
+                itemBuilder: (context, index) => const FollowCard(),
                 itemCount: 10,
               ),
             )
           ],
         ),
-        bottomSheet: MyBottomBar(),
+        bottomSheet: const MyBottomBar(),
       ),
     );
   }
