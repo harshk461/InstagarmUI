@@ -10,9 +10,9 @@ class ProfileCard extends StatelessWidget {
       child: Expanded(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
                   padding: const EdgeInsets.all(3.0),
@@ -23,15 +23,24 @@ class ProfileCard extends StatelessWidget {
                     borderRadius: BorderRadius.circular(100.0),
                     child: Image.asset(
                       "assets/images/user.jpeg",
-                      width: 90.0,
-                      height: 90.0,
+                      width: 80.0,
+                      height: 80.0,
                     ),
                   ),
                 ),
+                SizedBox(
+                  height: 10.0,
+                ),
+                Text(
+                  "Harsh",
+                  style: TextStyle(
+                    fontSize: 18.0,
+                  ),
+                )
               ],
             ),
             Container(
-              margin: const EdgeInsets.only(top: 20.0),
+              margin: const EdgeInsets.only(top: 30.0),
               child: Row(
                 children: [
                   Column(
@@ -39,46 +48,46 @@ class ProfileCard extends StatelessWidget {
                       Text(
                         "Posts",
                         style: TextStyle(
-                            fontSize: 22.0, fontWeight: FontWeight.bold),
+                            fontSize: 18.0, fontWeight: FontWeight.bold),
                       ),
                       Text(
                         "5",
                         style: TextStyle(
-                            fontSize: 22.0, fontWeight: FontWeight.bold),
+                            fontSize: 18.0, fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),
                   const SizedBox(
-                    width: 5.0,
+                    width: 10.0,
                   ),
                   Column(
                     children: const [
                       Text(
                         "Followers",
                         style: TextStyle(
-                            fontSize: 22.0, fontWeight: FontWeight.bold),
+                            fontSize: 18.0, fontWeight: FontWeight.bold),
                       ),
                       Text(
                         "500",
                         style: TextStyle(
-                            fontSize: 22.0, fontWeight: FontWeight.bold),
+                            fontSize: 18.0, fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),
                   const SizedBox(
-                    width: 5.0,
+                    width: 10.0,
                   ),
                   Column(
                     children: const [
                       Text(
                         "Following",
                         style: TextStyle(
-                            fontSize: 22.0, fontWeight: FontWeight.bold),
+                            fontSize: 18.0, fontWeight: FontWeight.bold),
                       ),
                       Text(
                         "500",
                         style: TextStyle(
-                            fontSize: 22.0, fontWeight: FontWeight.bold),
+                            fontSize: 18.0, fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),

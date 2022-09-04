@@ -13,6 +13,7 @@ class _FollowCardState extends State<FollowCard> {
     String btntext = 'Following';
     return Expanded(
       child: Container(
+        width: MediaQuery.of(context).size.width,
         padding: const EdgeInsets.fromLTRB(15.0, 10.0, 15.0, 0.0),
         margin: const EdgeInsets.only(bottom: 10.0),
         decoration: const BoxDecoration(),
@@ -25,8 +26,8 @@ class _FollowCardState extends State<FollowCard> {
                   borderRadius: BorderRadius.circular(100.0),
                   child: Image.asset(
                     "assets/images/user.jpeg",
-                    width: 60.0,
-                    height: 60.0,
+                    width: 40.0,
+                    height: 40.0,
                   ),
                 ),
                 const SizedBox(
@@ -37,18 +38,18 @@ class _FollowCardState extends State<FollowCard> {
                   child: Text(
                     "XYZ ABCC Started\n Following you",
                     style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 17.0,
                     ),
                   ),
                 ),
               ],
             ),
             ElevatedButton(
-              onPressed: (){},
+              onPressed: () {},
               child: Text(
                 btntext,
                 style: const TextStyle(
-                  fontSize: 20.0,
+                  fontSize: 15.0,
                 ),
               ),
             ),

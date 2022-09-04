@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      initialRoute: '/profile',
+      initialRoute: '/',
       routes: {
         '/': (context) => const HomePage(),
         '/search': (context) => const SearchPage(),
