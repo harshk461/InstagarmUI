@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class StoryBubble extends StatelessWidget {
   final String ImageUrl;
   final String text;
-  StoryBubble({required this.ImageUrl, required this.text});
+  const StoryBubble({required this.ImageUrl, required this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class StoryBubble extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(height: 8.0),
+        const SizedBox(height: 8.0),
         Text(text),
       ],
     );

@@ -21,15 +21,13 @@ class StoryBar extends StatelessWidget {
       ['user.jpeg', "Harsdjkmsh"],
     ];
     return Expanded(
-      child: Container(
-        child: ListView.builder(
-          scrollDirection: Axis.horizontal,
-          itemCount: StoryUser.length,
-          itemBuilder: ((context, index) => StoryBubble(
-                ImageUrl: StoryUser[index][0],
-                text: StoryUser[index][1],
-              )),
-        ),
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: StoryUser.length,
+        itemBuilder: ((context, index) => StoryBubble(
+              ImageUrl: StoryUser[index][0],
+              text: StoryUser[index][1],
+            )),
       ),
     );
   }

@@ -44,14 +44,7 @@ class _FollowCardState extends State<FollowCard> {
               ],
             ),
             ElevatedButton(
-              onPressed: () {
-                setState(() {
-                  if (btntext == 'Following') {
-                    btntext = 'Follow';
-                    print("dhjs");
-                  }
-                });
-              },
+              onPressed: (){},
               child: Text(
                 btntext,
                 style: const TextStyle(

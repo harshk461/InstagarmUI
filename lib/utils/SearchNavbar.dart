@@ -7,23 +7,23 @@ class SearchNavbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Padding(
-        padding: EdgeInsets.all(10.0),
+        padding: const EdgeInsets.all(10.0),
         child: TextField(
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 18.0,
           ),
           decoration: InputDecoration(
             hintText: "Search...",
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(30.0),
-              borderSide: BorderSide(
+              borderSide: const BorderSide(
                 width: 1.0,
                 color: Colors.white,
               ),
             ),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(30.0),
-              borderSide: BorderSide(
+              borderSide: const BorderSide(
                 width: 1.0,
                 color: Colors.white,
               ),

@@ -25,12 +25,12 @@ class MyPost extends StatelessWidget {
                     height: 50.0,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10.0,
                 ),
                 Text(
                   text,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 24.0,
                   ),
                 ),
@@ -38,11 +38,11 @@ class MyPost extends StatelessWidget {
             ),
             IconButton(
               onPressed: () {},
-              icon: FaIcon(FontAwesomeIcons.ellipsisVertical),
+              icon: const FaIcon(FontAwesomeIcons.ellipsisVertical),
             )
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: 10.0,
         ),
         Container(
@@ -53,7 +53,7 @@ class MyPost extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 10.0,
         ),
         SizedBox(
@@ -65,21 +65,21 @@ class MyPost extends StatelessWidget {
                 children: [
                   IconButton(
                     onPressed: () {},
-                    icon: FaIcon(
+                    icon: const FaIcon(
                       FontAwesomeIcons.heart,
                       size: 35.0,
                     ),
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: FaIcon(
+                    icon: const FaIcon(
                       FontAwesomeIcons.comment,
                       size: 35.0,
                     ),
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: FaIcon(
+                    icon: const FaIcon(
                       FontAwesomeIcons.paperPlane,
                       size: 35.0,
                     ),
@@ -88,7 +88,7 @@ class MyPost extends StatelessWidget {
               ),
               IconButton(
                 onPressed: () {},
-                icon: FaIcon(
+                icon: const FaIcon(
                   FontAwesomeIcons.bookmark,
                   size: 35.0,
                 ),
@@ -96,7 +96,7 @@ class MyPost extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20.0,
         )
       ],
